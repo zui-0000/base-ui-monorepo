@@ -1,6 +1,6 @@
 # base-ui-monorepo
 
-## セットアップ
+## miseセットアップ
 
 ```sh
 mise install
