@@ -1,9 +1,5 @@
+import { Button, Checkbox, Input, RadioGroup, Select } from "@packages/ui";
 import { useState } from "react";
-import { Button } from "~/components/ui/Button";
-import { Checkbox } from "~/components/ui/Checkbox";
-import { Input } from "~/components/ui/Input";
-import { RadioGroup } from "~/components/ui/RadioGroup";
-import { Select } from "~/components/ui/Select";
 
 const genderItems = [
   { label: "男性", value: "male" },
@@ -72,7 +68,7 @@ export default function UserPage() {
             name="agreement"
             label="利用規約に同意する"
             checked={agreed}
-            onCheckedChange={(checked) => setAgreed(checked as boolean)}
+            onCheckedChange={(checked: boolean | "indeterminate") => setAgreed(checked as boolean)}
           />
 
           <Button type="submit" disabled={!agreed} className="mt-2">

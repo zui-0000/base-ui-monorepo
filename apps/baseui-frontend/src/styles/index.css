@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource-variable/geist";
 
+@source "../../packages/ui/src";
+
 @theme {
   --font-sans: "Geist Variable", sans-serif;
 }

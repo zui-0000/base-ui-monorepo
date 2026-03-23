@@ -1,0 +1,17 @@
+{
+  "name": "@packages/ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "peerDependencies": {
+    "@base-ui/react": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "dependencies": {
+    "clsx": "catalog:dependencies"
+  }
+}
