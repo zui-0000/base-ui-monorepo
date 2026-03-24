@@ -4,12 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./styles": "./src/styles/index.ts"
   },
   "peerDependencies": {
     "@base-ui/react": "*",
     "react": "*",
     "react-dom": "*"
+  },
+  "devDependencies": {
+    "@base-ui/react": "catalog:dependencies",
+    "@types/react": "catalog:devDependencies",
+    "@types/react-dom": "catalog:devDependencies",
+    "react": "catalog:dependencies",
+    "react-dom": "catalog:dependencies",
+    "tailwindcss": "catalog:devDependencies"
   },
   "dependencies": {
     "clsx": "catalog:dependencies"
