@@ -7,12 +7,16 @@
     ".": "./src/index.ts",
     "./styles": "./src/styles/index.ts"
   },
+  "scripts": {
+    "lint:fix": "biome check --write ."
+  },
   "peerDependencies": {
     "@base-ui/react": "*",
     "react": "*",
     "react-dom": "*"
   },
   "devDependencies": {
+    "@biomejs/biome": "catalog:devDependencies",
     "@base-ui/react": "catalog:dependencies",
     "@types/react": "catalog:devDependencies",
     "@types/react-dom": "catalog:devDependencies",
