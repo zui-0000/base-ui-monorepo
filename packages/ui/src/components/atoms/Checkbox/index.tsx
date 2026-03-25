@@ -1,7 +1,7 @@
 import { Checkbox as BaseCheckbox } from "@base-ui/react/checkbox";
+import { cn } from "@ui/lib/utils";
 import type { ComponentProps } from "react";
 import { useId } from "react";
-import { cn } from "../../../lib/utils";
 
 type CheckboxProps = BaseCheckbox.Root.Props & {
   label?: string;

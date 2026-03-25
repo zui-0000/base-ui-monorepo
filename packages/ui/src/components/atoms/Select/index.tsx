@@ -1,6 +1,6 @@
 import { Select as BaseSelect } from "@base-ui/react/select";
+import { cn } from "@ui/lib/utils";
 import type { ComponentProps } from "react";
-import { cn } from "../../../lib/utils";
 
 type SelectItem = {
   label: string;

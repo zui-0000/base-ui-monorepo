@@ -1,5 +1,5 @@
 import { Button as BaseButton } from "@base-ui/react/button";
-import { cn } from "../../../lib/utils";
+import { cn } from "@ui/lib/utils";
 
 const variantStyles = {
   primary:

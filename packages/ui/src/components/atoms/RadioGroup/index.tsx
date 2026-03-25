@@ -1,7 +1,7 @@
 import { Radio } from "@base-ui/react/radio";
 import { RadioGroup as BaseRadioGroup } from "@base-ui/react/radio-group";
+import { cn } from "@ui/lib/utils";
 import { useId } from "react";
-import { cn } from "../../../lib/utils";
 
 type RadioItem = {
   label: string;
