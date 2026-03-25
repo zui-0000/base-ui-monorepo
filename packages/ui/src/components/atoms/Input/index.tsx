@@ -1,5 +1,5 @@
 import { Input as BaseInput } from "@base-ui/react/input";
-import { cn } from "../../lib/utils";
+import { cn } from "../../../lib/utils";
 
 type InputProps = BaseInput.Props;
 
