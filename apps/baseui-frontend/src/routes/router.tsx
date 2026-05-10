@@ -1,4 +1,4 @@
-import { PageLoadingSpinner } from "@packages/ui/components/commons";
+import { PageLoadingSpinner } from "@packages/ui/components/composite";
 import { Outlet, createRootRoute, createRoute, createRouter } from "@tanstack/react-router";
 import { Suspense, lazy } from "react";
 

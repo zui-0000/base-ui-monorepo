@@ -32,6 +32,7 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:devDependencies",
     "@tailwindcss/vite": "catalog:devDependencies",
+    "@tanstack/react-router-devtools": "catalog:devDependencies",
     "@types/node": "catalog:devDependencies",
     "@types/react": "catalog:devDependencies",
     "@types/react-dom": "catalog:devDependencies",
