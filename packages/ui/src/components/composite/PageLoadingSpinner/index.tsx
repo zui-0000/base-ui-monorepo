@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { LoadingSpinner } from "../../atoms";
+import { LoadingSpinner } from "../../primitives";
 
 export const PageLoadingSpinner: FC = () => {
   return (
