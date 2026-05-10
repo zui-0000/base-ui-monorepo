@@ -23,7 +23,6 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": ".",
     "paths": {
       "@packages/ui": ["../../packages/ui/src/index.ts"],
       "@packages/ui/*": ["../../packages/ui/src/*"],

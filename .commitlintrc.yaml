@@ -1,0 +1,45 @@
+extends:
+  - "@commitlint/config-conventional"
+
+rules:
+  # type (prefix) の一般的な意味
+  # - feat: 新機能追加（ユーザー向けの機能）
+  # - fix: バグ修正
+  # - docs: ドキュメントのみの変更（README等）
+  # - refactor: リファクタ（挙動は変えずに内部改善）
+  # - test: テスト追加/修正
+  # - chore: 雑務（ビルド成果物以外の作業、依存更新、設定変更、ブランチマージなど）
+  # - ci: CI設定やスクリプトの変更（GitHub Actions等）
+  # - build: ビルド関連の変更（ビルドツール/設定、依存のビルドに影響する変更）
+  # - perf: パフォーマンス改善
+  # - revert: 以前のコミットの取り消し（revert）
+  # - wip: 作業中（WIP: Work In Progress）※運用で許可/禁止を決めることが多い
+  # - release: リリース用（バージョン更新、CHANGELOG更新、リリース作業）
+  type-enum:
+    - 2
+    - always
+    - - feat
+      - fix
+      - docs
+      - refactor
+      - test
+      - chore
+      - ci
+      - build
+      - perf
+      - revert
+      - wip
+      - release
+
+  # subject は必須（0 にすると必須でなくなる）
+  subject-empty:
+    - 2
+    - never
+
+  # 例: 日本語だと subject の大文字開始ルールは邪魔なのでOFF
+  subject-case:
+    - 0
+
+  # 例: 本文（body）を必須にしない
+  body-empty:
+    - 0

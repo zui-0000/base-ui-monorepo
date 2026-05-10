@@ -1,0 +1,17 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: frontend-check
+      run: cd apps/baseui-frontend && pnpm check:lefthook
+
+    - name: packages/ui-check
+      run: cd packages/ui && pnpm check:lefthook
+
+  skip:
+    - merge
+    - rebase
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit {1}

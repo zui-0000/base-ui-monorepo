@@ -1,5 +1,27 @@
 {
-  "name": "base-ui-monorepo",
+  "name": "baseui-monorepo",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0"
+  "type": "module",
+  "scripts": {
+    "check:updates": "pnpm outdated --recursive --long",
+    "install:ci": "pnpm install --frozen-lockfile",
+    "dev:backend": "pnpm --filter ./apps/backend dev",
+    "dev:frontend": "pnpm --filter ./apps/frontend dev",
+    "fix:package-json": "sort-package-json package.json",
+    "prepare": "lefthook install",
+    "turbo-build:dev": "turbo run build:dev",
+    "turbo-build:prd": "turbo run build:prd",
+    "turbo-build:stg": "turbo run build:stg",
+    "turbo-check:biome": "turbo run check:biome",
+    "turbo-check:type": "turbo run check:type"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "catalog:devDependencies",
+    "@commitlint/config-conventional": "catalog:devDependencies",
+    "lefthook": "catalog:devDependencies",
+    "sort-package-json": "catalog:devDependencies",
+    "turbo": "catalog:devDependencies"
+  },
+  "packageManager": "pnpm@11.0.9"
 }

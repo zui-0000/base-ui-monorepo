@@ -1,6 +1,31 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.8/schema.json",
-  "extends": ["../../biome.jsonc"],
+  "root": true,
+  "$schema": "https://biomejs.dev/schemas/2.4.14/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true
+    }
+  },
   "files": {
     "ignoreUnknown": false,
     "includes": [
@@ -44,7 +69,9 @@
   "linter": {
     "enabled": true,
     "domains": {
-      "react": "recommended"
+      "react": "recommended",
+      "tailwind": "recommended",
+      "turborepo": "all"
     },
     "rules": {
       "recommended": true,
@@ -61,7 +88,9 @@
         }
       },
       "correctness": {
-        "noUnusedImports": "error"
+        "noUnusedImports": "error",
+        // NOTE: hookの依存配列が不足している場合にエラーを出す
+        "useExhaustiveDependencies": "error"
       },
       "suspicious": {
         "noImportCycles": "error"

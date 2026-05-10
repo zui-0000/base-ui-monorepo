@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["tailwind.config.ts"],
+  "project": ["src/**/*.{ts,tsx}", "**/*.config.{ts,js,cjs,mjs}"],
+  "ignore": ["**/*.d.ts"],
+  // CSSでインポートされているため knip が検出できない依存関係
+  "ignoreDependencies": ["@fontsource-variable/geist"]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build:dev": {
+      "outputs": ["dist/**"]
+    },
+    "build:local": {
+      "outputs": ["dist/**"]
+    },
+    "build:stg": {
+      "outputs": ["dist/**"]
+    },
+    "build:prd": {
+      "outputs": ["dist/**"]
+    },
+    "check:biome": {},
+    "check:type": {},
+    "check:knip": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint:fix": {
+      "cache": false
+    },
+    "fix:biome": {
+      "cache": false
+    }
+  }
+}

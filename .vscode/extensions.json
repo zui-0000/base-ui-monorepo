@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "streetsidesoftware.code-spell-checker",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "dsznajder.es7-react-js-snippets",
+    "mhutchie.git-graph",
+    "oderwat.indent-rainbow",
+    "ms-ceintl.vscode-language-pack-ja",
+    "shd101wyy.markdown-preview-enhanced",
+    "gruntfuggly.todo-tree",
+    "typespec.typespec-vscode",
+    "vitest.explorer",
+    "mosapride.zenkaku",
+  ]
+}

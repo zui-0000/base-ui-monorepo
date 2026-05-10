@@ -1,30 +1,39 @@
 {
   "name": "@packages/ui",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
     "./styles": "./src/styles/index.ts"
   },
   "scripts": {
-    "lint:fix": "biome check --write ."
+    "check:biome": "biome check .",
+    "check:knip": "knip",
+    "check:lefthook": "pnpm check:type && pnpm check:biome",
+    "check:type": "tsgo --noEmit",
+    "fix:biome": "biome check --write .",
+    "fix:knip": "knip --fix --no-exit-code",
+    "fix:package-json": "sort-package-json package.json",
+    "lint:fix": "pnpm fix:package-json && pnpm check:type && pnpm fix:biome"
+  },
+  "dependencies": {
+    "clsx": "catalog:dependencies"
+  },
+  "devDependencies": {
+    "@base-ui/react": "catalog:dependencies",
+    "@biomejs/biome": "catalog:devDependencies",
+    "@types/react": "catalog:devDependencies",
+    "@types/react-dom": "catalog:devDependencies",
+    "@typescript/native-preview": "catalog:devDependencies",
+    "react": "catalog:dependencies",
+    "react-dom": "catalog:dependencies",
+    "sort-package-json": "catalog:devDependencies",
+    "tailwindcss": "catalog:devDependencies"
   },
   "peerDependencies": {
     "@base-ui/react": "*",
     "react": "*",
     "react-dom": "*"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "catalog:devDependencies",
-    "@base-ui/react": "catalog:dependencies",
-    "@types/react": "catalog:devDependencies",
-    "@types/react-dom": "catalog:devDependencies",
-    "react": "catalog:dependencies",
-    "react-dom": "catalog:dependencies",
-    "tailwindcss": "catalog:devDependencies"
-  },
-  "dependencies": {
-    "clsx": "catalog:dependencies"
   }
 }
